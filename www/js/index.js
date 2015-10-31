@@ -45,5 +45,9 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        
+        $("#info").html('Cordova version '+device.cordova+'<br>');
+        $("#info").append(device.model+'<br>');
+        $("#info").append(device.platform+' '+device.version+'<br>');
     }
 };
